@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "node --import=tsx --test src/**/*.test.ts",
+    "test": "node --import=tsx --test",
+    "build": "tsc",
     "start": "node --import=tsx src/index.ts"
   },
   "keywords": [],
