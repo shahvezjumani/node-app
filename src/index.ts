@@ -4,10 +4,7 @@ const app = express()
 
 const PORT = process.env.PORT || 3000
 
-export function getCurrentTime(): string {
-    const now = new Date()
-    return now.toISOString()
-}
+
 
 app.get("/health",(req, res) => {
     res.json({ status: "ok" })
